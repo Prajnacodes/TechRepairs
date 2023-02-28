@@ -1,0 +1,311 @@
+/* Adjust the background color with a linear gradient */
+body {
+    /* background-color: rgba(251, 233, 242, 0.728); */
+    background: linear-gradient(rgba(251, 233, 242, 0.728), rgba(203, 165, 184, 0.728), rgba(201, 129, 165, 0.728));
+}
+
+/* modify the container div with a static width of 1024px and center it*/
+.container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------------------------- */
+/* CSS for the Header, Logo, and NAV */
+/* --------------------------------- */
+
+/* The header box will need to display the content side by side using flexbox and justify content ... Hint: flex, center the items, 
+    and add some space from the outside edges */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b8336a9d;
+}
+
+/* adjust the size of the logo image (150 - 225 px) */
+.logoIcon img {
+    width: 150px;
+}
+
+/* Style the look of the buttons (color, border, padding etc.), display, and their position  */
+.navButton {
+    border: 2px solid rgb(190, 143, 178);
+    color: rgb(183, 89, 120);
+    padding: 12px 25px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+/* Remove the hypertext look from the anchor element, change the font, and font color */
+.navButton a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #c67d9c;
+}
+
+/* Style (position, border, shadow) and hide the drop down box */
+.dropDown {
+    position: absolute;
+    margin-left: -27px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px black;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    display: none;
+}
+
+/* This will override the previous class selector during hover to display the dropdown. */
+.navButton:hover .dropDown {
+    display: block;
+}
+
+/* Change the background color of the dropdown menu and possibly remove the border  */
+.dropDown .navButton {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+/* style the color of the anchor elements inside the drop down*/
+.dropDown .navButton a {
+    color: #c67d9c;
+}
+
+/* Bonus add a hover effect to the dropdown menu with a color change of the background */
+.dropDown .navButton:hover {
+    background-color: #ecc8dc;
+}
+
+/* --------------------------------------- */
+/* CSS for the Main Section of the Website */
+/* ---------------------------------------- */
+
+/* Create a min-height of 300, add flex, and align everything to the center */
+main {
+    display: flex;
+    min-height: 300px;
+}
+
+/* Add a flex ratio of 2 and some padding */
+.heroBox1 {
+    flex: 2;
+    padding: 3rem;
+}
+
+/* Add a flex ratio of 1  */
+.heroBox2 {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Stretch the image to 100% of the div and add a drop-shadow filter */
+.heroBox2 img {
+    width: 100%;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+/* Modify the font size, font family, padding and add a text shadow */
+h1 {
+    font-size: 3rem;
+    font-family: 'Gentium Book Plus', serif;
+    padding-bottom: 0.25rem;
+    text-shadow: 2px 2px 2px rgba(142, 142, 142, 0.715);
+}
+
+/* Modify the font size, font family, top margin */
+h2 {
+    font-size: 2rem;
+    font-family: 'Gentium Book Plus', serif;
+    margin-top: 7px;
+    padding-bottom: .2rem;
+}
+
+/* modify the line-height and padding on the bottom */
+p {
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+    font-family: 'Gentium Book Plus', serif;
+    padding-bottom: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.myButton {
+    text-decoration: none;
+    font-family: 'Gentium Book Plus', serif;
+    background-color: #ecc8dc;
+    border: 2px solid rgb(218, 142, 154);
+    border-radius: 20px;
+    padding: 7px;
+    margin-left: -5px;
+}
+
+/* ---------------------------------------- */
+/* CSS for the Cards Section of the Website */
+/* ---------------------------------------- */
+
+/* Set the cards section to flex, justify the content, and align to center */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Add a background image from the images folder with citation comment, set the background size to cover the space, adjust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
+.card1 {
+    /* "wocintech (microsoft) - 62" by wocintechchat.com is licensed under CC BY 2.0 */
+    background-image: url(images/800px-Books-business-computer-connection-459654.jpg);
+    background-size: cover;
+    /* This line will tell the image to position from the bottom corner of the space provided */
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(91, 91, 91, 0.794);
+    margin-bottom: 10px;
+    filter: opacity(85%);
+}
+
+/* Add a background image from the images folder with citation commment, set the background size to cover the space, ajust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
+.card2 {
+    /* "Motherboard on Film" by Quasic is licensed under CC BY-SA 2.0 */
+    background-image: url(images/motherboard.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(91, 91, 91, 0.794);
+    margin-bottom: 10px;
+    filter: opacity(85%)
+}
+
+/* Add a background image from the images folder with citation comment, set the background size to cover the space, adjust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
+.card3 {
+    /* "iPhone 8 Plus Bokeh" by Photos By Dlee is licensed under CC BY-NC-ND 2.0 */
+    background-image: url(images/iphone.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(91, 91, 91, 0.794);
+    margin-bottom: 10px;
+    filter: opacity(85%)
+}
+
+/* Change the font size using rem, change the line height, adjust the margin, and change the font family */
+.cards p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-family: 'Gentium Book Plus', serif;
+    /* margin-left: 1rem;
+    margin-right: 1.2rem; */
+}
+
+/* Add padding to the top of the icon (0.75 rem), adjust the font size to 100px (or equivalent rem), change the color to something light (ex. rgb(236, 216, 207) )  */
+.cards i {
+    padding-top: 0.75rem;
+    font-size: 100px;
+    color: #fae9f0;
+}
+
+/* remove the underline from the hyperlink, change the color to something light or even just white, add text shadow */
+.cards a {
+    text-decoration: none;
+    color: #fae9f0;
+    text-shadow: 2px 2px 2px rgba(58, 58, 58, 0.794);
+}
+
+
+/* ----------------------------------------------- */
+/* CSS for the Testimonials Section of the Website */
+/* ----------------------------------------------- */
+
+/* For the testimonials / review section, add flex to the display, justify the content so it is spaced out, use flex-wrap and set it to "wrap", add some margin to the top and bottom */
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* For each individual box, add a light-colored border, include some padding, make each one the width of 40% to 45%, add a margin to the bottom of each box to create spacing between the rows  */
+.tBox {
+    border: 2px solid pink;
+    padding: 2rem;
+    width: 42%;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ----------------------------------------- */
+/* CSS for the Footer Section of the Website */
+/* ----------------------------------------- */
+
+/* For the footer, add a background color that is transparent, change the color of the font to something light, add a max width that matches the container's width, add margin to the right and left to center the content... consider also adding some margin to the top. */
+footer {
+    background-color: rgba(251, 233, 242, 0.462);
+    color: rgba(119, 172, 219, 0.819);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: .5rem;
+}
+
+
+/* --------------------------- */
+/* CSS for the Contact Us Page */
+/* --------------------------- */
+
+.heroBox2 {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email {
+    width: 45%;
+    text-align: center;
+    background-color: #c67d9b5d;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.email a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+    font-family: 'Gentium Book Plus', serif;
+    padding-bottom: 0.5rem;
+    margin-bottom: 7px;
+    color: rgba(243, 209, 207, 0.892);
+}
+
+.phone {
+    width: 45%;
+    text-align: center;
+    background-color: #c67d9b5d;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.openTimes {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: #c67d9b5d;
+    max-width: 350px;
+    padding: 7px;
+}
